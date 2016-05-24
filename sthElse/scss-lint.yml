@@ -8,8 +8,7 @@ plugin_directories: ['.scss-linters']
 plugin_gems: []
 
 # Default severity of all linters.
-# 默认严重程度为error
-severity: error
+severity: warning
 
 linters:
   # 对!default, !global, !important, !optional生效
