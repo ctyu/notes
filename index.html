@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Felint</title>
+    <link rel="stylesheet" type="text/css" href="./home/styles/home.css">
+</head>
+<body>
+    <header class="header">
+        <section class="icon-wrap">
+            <img class="icon left" src="./home/image/youzan.png" alt="youzan">
+            <img class="icon right" src="./home/image/github.png" alt="github">
+        </section>
+        <section class="felint-logo-wrap">
+            <img class="felint-logo" src="./home/image/felint@2x.png">
+        </section>
+        <section class="felint-desc">A smart way to eslint and scss-lint for front end</section>
+        <a href="#install" class="start-use-bt">立即使用</a>
+    </header>
+    <section class="content-body">
+        <section class="step-part">
+            <a class="title" name="install" id="install">安装 felint</a>
+            <p class="desc">安装前请确保你的电脑已经安装好了 npm 和 gem</p>
+            <section class="code">
+                <div class="code-content">
+                    <p>
+                        npm install -g felint
+                    </p>
+                </div>
+            </section>
+        </section>
+        <section class="step-part">
+            <a class="title">初始化 felint</a>
+            <p class="desc">进入到你项目的根目录，运行</p>
+            <section class="code">
+                <div class="code-content">
+                    <p>
+                        felint init
+                    </p>
+                </div>
+            </section>
+            <p class="desc">felint 会从<a class="link" href="https://github.com/youzan/felint-config" target="_blank">https://github.com/youzan/felint-config</a>下载所需的默认的配置文件，包括Git Hook脚本、eslint 和 css lint 的配置文件等，然后放到当前项目合适的位置，并执行内置脚本安装依赖。</p>
+        </section>
+        <section class="step-part">
+            <p class="title">使用自己的 felint 配置</p>
+            <p class="desc">如果你不想使用我们默认的<a class="link" href="https://github.com/youzan/felint-config" target="_blank">felint-config</a>校验，你可以 fork 出来修改为自己的 felint-config（修改方法参考 felint-config 的 readme ），然后在项目中手动配置你自己的 felint-config 仓库地址，在你的项目根目录添加一个 .felintrc 文件，其文件内容格式为：</p>
+            <section class="code">
+                <div class="code-content">
+                    <p>{</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"gitHookUrl": "your url"</p>
+                    <p>}</p>
+                </div>
+            </section>
+            <p class="desc">然后重新执行一次<span class="code-content-inline">felint init</span>即可。</p>
+        </section>
+        <section class="step-part">
+            <p class="title">扩展默认 felint 配置</p>
+            <p class="desc">如果你仅仅想简单修改默认配置项，你可以在 .felintrc 文件中简单添加覆盖项目，其内容格式为：</p>
+            <section class="code">
+                <div class="code-content">
+                    <p>{</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"eslintrc_es6": {your rules}</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"eslintrc_es5": {your rules}</p>
+                    <p>}</p>
+                </div>
+            </section>
+            <p class="desc">然后重新执行一次<span class="code-content-inline">felint use</span>或<span class="code-content-inline">felint init</span>即可。</p>
+            <p class="desc">注意，执行<span class="code-content-inline">felint use</span>命令的前提必须为已执行<span class="code-content-inline">felint init</span></p>
+        </section>
+        <section class="step-part">
+            <p class="title"> felint 对es6的支持 </p>
+            <p class="desc"><span class="code-content-inline">felint init</span>命令默认初始化的为es5的语法规则，如果你的项目使用es6语法，请使用如下命令切换：</p>
+            <p class="desc">如尚未执行<span class="code-content-inline">felint init</span>：</p>
+            <section class="code">
+                <div class="code-content">
+                    <p>felint init -6</p>
+                </div>
+            </section>
+            <p class="desc">如已执行<span class="code-content-inline">felint init</span>：</p>
+            <section class="code">
+                <div class="code-content">
+                    <p>felint use -6</p>
+                </div>
+            </section>
+        </section>
+        <section class="step-part">
+            <p class="title"> 其他命令 </p>
+            <section class="code">
+                <div class="code-content">
+                    <p>felint checkrc</p>
+                </div>
+            </section>
+            <p class="desc"><span class="code-content-inline">felint checkrc</span>命令可以帮你列出当前路径及其父路径上存在的.eslintrc文件。</p>
+        </section>
+        <section class="step-part">
+            <p class="title"> felint 依赖 </p>
+            <p class="desc">felint 依赖包如下：</p>
+            <section class="code">
+                <div class="code-content">
+                    <p>scss_lint@0.48.0</p>
+                    <p>eslint@2.11.1</p>
+                    <p>babel-eslint@6.0.4</p>
+                    <p>eslint-plugin-react@5.1.1</p>
+                    <p>eslint-plugin-jsx-a11y@1.2.3</p>
+                    <p>eslint-config-airbnb@9.0.1</p>
+                    <p>eslint-plugin-lean-imports@0.3.3</p>
+                </div>
+            </section>
+            <p class="desc">依赖将在执行<span class="code-content-inline">felint init</span>命令是自动安装。</p>
+        </section>
+        <section class="step-part">
+            <p class="title"> Q&A </p>
+            <p class="desc">如发现git Hooks执行报错，请检查依赖版本是否符合。</p>
+        </section>
+    </section>
+    <footer>
+        <span class="inc">&copy;Youzan.com, Inc.</span>
+    </footer>
+</body>
+</html>

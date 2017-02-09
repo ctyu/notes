@@ -1,0 +1,125 @@
+html {
+    font-family: PingFangSC-Regular;
+}
+
+body {
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+.content-body {
+    font-family: 'PingFangSC-Regular';
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.felint-desc {
+    font-family: '.SFNSDisplay-Regular';
+    color: #666;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.icon-wrap {
+    overflow: hidden;
+}
+
+.icon {
+    width: 36px;
+}
+
+.felint-logo-wrap {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.felint-logo {
+    width: 226px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.step-part {
+    margin-top: 40px;
+}
+
+.start-use-bt {
+    display: block;
+    width: 129px;
+    line-height: 36px;
+    border: 2px solid #484848;
+    border-radius: 20px;
+    text-align: center;
+    color: #484848;
+    margin: 80px auto;
+}
+
+.title {
+    font-size: 20px;
+    color: #303030;
+}
+
+.desc {
+    font-size: 14px;
+    color: #666;
+    margin-top: 18px;
+}
+
+.link {
+    color: #4078c0;
+}
+
+.code {
+    margin-top: 18px;
+}
+
+.code-content {
+    background-color: #f7f7f7;
+    padding: 18px 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 20px;
+    color: #303030;
+}
+
+.code-content-inline {
+    background-color: #f7f7f7;
+    color: #303030;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+.inc {
+    font-size: 14px;
+    color: #999;
+}
