@@ -1,7 +1,7 @@
 # notes
 
 __记录点滴__
-
+<p align="center"><img style="width: 226px;" src="https://img.yzcdn.cn/public_files/2017/02/09/232aae6e44455f5d068b9f74b9394f64.png"></p>
 <img src="https://img.yzcdn.cn/public_files/2017/02/09/e84aa8cbbf7852688c86218c1f3bbf17.png" alt="youzan" style="width: 36px;float: left;">
 <img src="https://img.yzcdn.cn/public_files/2017/02/09/803e2bac6080c47d17b382fb8e485d72.png" alt="github" style="width: 36px;float: right;">
 <img style="width: 226px;" src="https://img.yzcdn.cn/public_files/2017/02/09/232aae6e44455f5d068b9f74b9394f64.png">
