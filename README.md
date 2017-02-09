@@ -2,7 +2,7 @@
 
 __记录点滴__
 
-<header style="margin-top: 10px;
+<div style="margin-top: 10px;
     text-align: center;font-family: 'PingFangSC-Regular';">
     <section style="overflow: hidden;">
         <img src="https://img.yzcdn.cn/public_files/2017/02/09/e84aa8cbbf7852688c86218c1f3bbf17.png" alt="youzan" style="width: 36px;float: left;">
@@ -14,4 +14,4 @@ __记录点滴__
     </section>
     <section style="font-family: '.SFNSDisplay-Regular';color: #666;font-size: 20px;margin-top: 40px;">A smart way to eslint and scss-lint for front end</section>
     <a href="#install" style="display: block;width: 129px;line-height: 36px;border: 2px solid #484848;border-radius: 20px;text-align: center;color: #484848;margin: 80px auto;">立即使用</a>
-</header>
+</div>
